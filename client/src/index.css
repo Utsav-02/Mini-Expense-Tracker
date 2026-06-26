@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Core palette — clean white + slate grays */
+  --bg:          #F8F9FC;
+  --bg-alt:      #F1F3F8;
+  --surface:     #FFFFFF;
+  --surface2:    #F4F6FB;
+  --border:      #E4E8F0;
+  --border-soft: #ECF0F7;
+
+  /* Brand — deep indigo, professional */
+  --accent:      #4F46E5;
+  --accent-light:#EEF2FF;
+  --accent-mid:  #6366F1;
+  --accent-dark: #3730A3;
+
+  /* Semantic */
+  --green:       #059669;
+  --green-light: #ECFDF5;
+  --red:         #DC2626;
+  --red-light:   #FEF2F2;
+  --amber:       #D97706;
+  --amber-light: #FFFBEB;
+
+  /* Text */
+  --text:        #0F172A;
+  --text-sec:    #374151;
+  --text-dim:    #6B7280;
+  --text-faint:  #9CA3AF;
+
+  /* Shadows */
+  --shadow-xs:   0 1px 2px rgba(15,23,42,0.06);
+  --shadow-sm:   0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.04);
+  --shadow-md:   0 4px 6px rgba(15,23,42,0.07), 0 2px 4px rgba(15,23,42,0.04);
+  --shadow-lg:   0 10px 15px rgba(15,23,42,0.08), 0 4px 6px rgba(15,23,42,0.04);
+  --shadow-xl:   0 20px 25px rgba(15,23,42,0.1), 0 8px 10px rgba(15,23,42,0.04);
+
+  --radius:      14px;
+  --radius-sm:   8px;
+  --radius-xs:   6px;
+  --font:        'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono:        'DM Mono', 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+button { cursor: pointer; font-family: var(--font); }
+input, select, textarea { font-family: var(--font); }
+
+::selection { background: var(--accent-light); color: var(--accent-dark); }
